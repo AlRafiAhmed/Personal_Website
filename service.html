@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="py-7 bg-[#e3dfe8]">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center">
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600">
+                    <i class="fas fa-bars"></i> Menu
+                </button>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="hidden md:hidden w-full">
+                    <div class="flex flex-col gap-2 p-4 bg-white rounded-2xl">
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="index.html">Home</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="project.html">Projects</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-between w-2/3 lg:w-2/5 rounded-full">
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="index.html">Home</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="project.html">Projects</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-[#FFC300]">
+        <div class="container mx-auto px-4 pt-20">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="w-full md:w-3/5 mb-8 md:mb-0">
+                    <div class="text-center">
+                        <p class="text-xl md:text-2xl bg-white px-3 w-fit font-bold mx-auto">Hey...</p>
+                    </div>
+                    <h2 class="py-8 text-2xl md:text-4xl font-black text-center md:text-left">Comprehensive solutions covering front-end, back-end, API integration, database management, DevOps, testing, and project management to bring your ideas to life.</h2>
+                    <p class="text-xl md:text-2xl font-semibold mt-4 text-center md:text-left">If you want to expand or purchase it in a specific context.</p>
+                    <p class="text-xl md:text-2xl font-semibold mt-4 text-center md:text-left">Let me know if you need any adjustments!</p>
+                </div>
+                <div class="w-full md:w-1/5">
+                    <img class="mx-auto md:ml-auto animate-slide-in-right" src="img/service.png" alt="">
+                </div>
+
+                <style>
+                @layer utilities {
+                    .animate-slide-in-right {
+                        opacity: 0;
+                        transform: translateX(100px);
+                        animation: slideInRight 1s forwards;
+                    }
+
+                    @keyframes slideInRight {
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-[#FFC300]">
+        <div class="container mx-auto px-4">
+            <div class="text-center pb-12">
+                <p class="text-xl md:text-2xl bg-white px-3 w-fit font-bold mx-auto">Services</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-orange-600 p-4 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">Web Pages Design</h3>
+                    <p class="py-2 text-lg md:text-xl">Responsive Design</p>
+                    <p class="py-2 text-lg md:text-xl">SEO Optimisation</p>
+                    <p class="py-2 text-lg md:text-xl">Figma/PSD to Html</p>
+                    <p class="py-2 text-lg md:text-xl">User Interface Design</p>
+                    <p class="py-2 text-lg md:text-xl">User Experience Design</p>
+                    <p class="py-2 text-lg md:text-xl">Content Management System(CMS)</p>
+                    <div class="mt-10 flex justify-center">
+                        <a class="p-2 px-3 bg-white rounded-lg font-bold hover:bg-[#2708d5] hover:text-white fade-in" href="">Get</a>
+                    </div>
+                </div>
+
+                <div class="bg-orange-600 p-4 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">Front-End Development</h3>
+                    <p class="py-2 text-lg md:text-xl">HTML (HyperText Markup Language)</p>
+                    <p class="py-2 text-lg md:text-xl">CSS (Cascading Style Sheets)</p>
+                    <p class="py-2 text-lg md:text-xl">JavaScript</p>
+                    <p class="py-2 text-lg md:text-xl">Frameworks and Libraries</p>
+                    <p class="py-2 text-lg md:text-xl">Version Control</p>
+                    <p class="py-2 text-lg md:text-xl">Performance Optimization</p>
+                    <div class="mt-10 flex justify-center">
+                        <a class="p-2 px-3 bg-white rounded-lg font-bold hover:bg-[#2708d5] hover:text-white fade-in" href="">Get</a>
+                    </div>
+                </div>
+
+                <div class="bg-orange-600 p-4 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">Back-End Development</h3>
+                    <p class="py-2 text-lg md:text-xl">JavaScript (Node.js)</p>
+                    <p class="py-2 text-lg md:text-xl">PHP(A server-side)</p>
+                    <p class="py-2 text-lg md:text-xl">Python (Used in web development, data science, AI)</p>
+                    <p class="py-2 text-lg md:text-xl">Java Virtual Machine (JVM)</p>
+                    <p class="py-2 text-lg md:text-xl">Powers platforms like WordPress</p>
+                    <p class="py-2 text-lg md:text-xl">SQL (Structured Query Language)</p>
+                    <div class="mt-4 flex justify-center">
+                        <a class="p-2 px-3 bg-white rounded-lg font-bold hover:bg-[#2708d5] hover:text-white fade-in" href="">Get</a>
+                    </div>
+                </div>
+
+                <div class="bg-orange-600 p-4 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">React Development</h3>
+                    <p class="py-2 text-lg md:text-xl">React Development Languages</p>
+                    <p class="py-2 text-lg md:text-xl">React Frameworks and Libraries</p>
+                    <p class="py-2 text-lg md:text-xl">Redux</p>
+                    <p class="py-2 text-lg md:text-xl">React Router</p>
+                    <p class="py-2 text-lg md:text-xl">JSX (JavaScript XML)</p>
+                    <p class="py-2 text-lg md:text-xl">React Hooks</p>
+                    <div class="mt-10 flex justify-center">
+                        <a class="p-2 px-3 bg-white rounded-lg font-bold hover:bg-[#2708d5] hover:text-white fade-in" href="">Get</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

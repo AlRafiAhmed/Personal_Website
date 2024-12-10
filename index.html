@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+<body>
+    <section class="pt-8 bg-[#FFC300]">
+        <div class="container mx-auto px-4">
+            <div>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+                    <i class="fa-brands fa-react text-4xl p-4 animate-rotate-scale" style="color: #1436db;"></i>
+
+<style>
+@layer utilities {
+    .animate-rotate-scale {
+        animation: rotateScale 3s linear infinite;
+    }
+
+    @keyframes rotateScale {
+        0% {
+            transform: scale(1) rotate(0deg);
+        }
+        50% {
+            transform: scale(1.1) rotate(180deg);
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+        }
+    }
+}
+</style>
+
+                    <div class="w-full md:w-auto">
+                        <input placeholder="Search Here" class="w-full md:w-auto mt-4 rounded-full p-4 h-10 outline-none border-b-4 border-r-4 border-black border-opacity-60" type="text">
+                        <i class="fa-solid fa-magnifying-glass text-2xl ml-4 hover:text-[#f21010] cursor-pointer border-b-4 border-r-4 rounded-full border-black px-1 border-opacity-60"></i>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menuBtn" class="md:hidden w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600 mt-4">
+                        <i class="fas fa-bars"></i> Menu
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobileMenu" class="hidden md:hidden w-full">
+                        <div class="flex flex-col gap-2 p-4 bg-[#f3ec0c] rounded-2xl border-b-4 border-r-4 border-black border-opacity-60">
+                            <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                            <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="service.html">Services</a>
+                            <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                            <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="project.html">Projects</a>
+                            <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex justify-between w-2/5 p-4 bg-[#f3ec0c] rounded-full border-b-4 border-r-4 border-black border-opacity-60">
+                        <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                        <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="service.html">Services</a>
+                        <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                        <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="project.html">Projects</a>
+                        <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FFC300]">
+        <div class="container mx-auto px-4 pt-20">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-2/3">
+                    <div class="text-center">
+                        <p class="text-xl md:text-2xl bg-white px-3 italic w-fit font-bold border-black rounded-bl-xl rounded-tr-xl border-2 border-opacity-60 mx-auto">Hello</p>
+                    </div>
+                    <h2 class="py-8 text-2xl md:text-4xl font-black text-center">I am Al Rafi Ahmed a Full Stack Developer with expertise in both Front-End and Back-End Development.</h2>
+                    <p class="text-2xl md:text-4xl font-bold text-center">3 Years + Experience</p>
+                </div>
+                <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
+                    <img class="mx-auto lg:ml-auto animate-slide-in-right" src="img/RAfi PNG.png" alt="">
+                </div>
+
+                <style>
+                @layer utilities {
+                    .animate-slide-in-right {
+                        opacity: 0;
+                        transform: translateX(100px);
+                        animation: slideInRight 1s forwards;
+                    }
+
+                    @keyframes slideInRight {
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-4 bg-[#92e876]">
+        <div class="container mx-auto px-4">
+            <h2 class="py-10 font-black text-3xl md:text-4xl text-[#0004f5] text-center">My Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-orange-600 p-8 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">Web Pages Design</h3>
+                    <p class="py-2 text-lg md:text-xl">Responsive Design</p>
+                    <p class="py-2 text-lg md:text-xl">SEO Optimization</p>
+                    <p class="py-2 text-lg md:text-xl">Figma/PSD to Html</p>
+                    <p class="py-2 text-lg md:text-xl">User Interface Design</p>
+                    <p class="py-2 text-lg md:text-xl">User Experience Design</p>
+                    <p class="py-2 text-lg md:text-xl">Content Management System(CMS)</p>
+                </div>
+
+                <div class="bg-orange-600 p-8 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">Front-End Development</h3>
+                    <p class="py-2 text-lg md:text-xl">HTML (HyperText Markup Language)</p>
+                    <p class="py-2 text-lg md:text-xl">CSS (Cascading Style Sheets)</p>
+                    <p class="py-2 text-lg md:text-xl">JavaScript</p>
+                    <p class="py-2 text-lg md:text-xl">Frameworks and Libraries</p>
+                    <p class="py-2 text-lg md:text-xl">Version Control</p>
+                    <p class="py-2 text-lg md:text-xl">Performance Optimization</p>
+                </div>
+
+                <div class="bg-orange-600 p-8 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">Back-End Development</h3>
+                    <p class="py-2 text-lg md:text-xl">JavaScript (Node.js)</p>
+                    <p class="py-2 text-lg md:text-xl">PHP(A server-side)</p>
+                    <p class="py-2 text-lg md:text-xl">Python (Used in web development, data science, AI)</p>
+                    <p class="py-2 text-lg md:text-xl">Java Virtual Machine (JVM)</p>
+                    <p class="py-2 text-lg md:text-xl">Powers platforms like WordPress</p>
+                    <p class="py-2 text-lg md:text-xl">SQL (Structured Query Language)</p>
+                </div>
+
+                <div class="bg-orange-600 p-8 rounded-xl">
+                    <h3 class="font-semibold text-xl md:text-2xl text-white pb-4">React Development</h3>
+                    <p class="py-2 text-lg md:text-xl">React Development Languages</p>
+                    <p class="py-2 text-lg md:text-xl">React Frameworks and Libraries</p>
+                    <p class="py-2 text-lg md:text-xl">Redux</p>
+                    <p class="py-2 text-lg md:text-xl">React Router</p>
+                    <p class="py-2 text-lg md:text-xl">JSX (JavaScript XML)</p>
+                    <p class="py-2 text-lg md:text-xl">React Hooks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-4 bg-[#a2dfea]">
+        <div class="container mx-auto px-4">
+            <h3 class="py-10 font-black text-3xl md:text-4xl text-[#0004f5] text-center">My Work Experience</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-orange-600">
+                    <div class="p-8">
+                        <h3 class="text-xl md:text-2xl font-bold py-4 text-center">Creative IT Institute</h3>
+                        <p class="text-lg md:text-xl font-semibold py-4 text-center">October 2023 - September 2024</p>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl md:text-2xl font-bold py-4 text-center">IUBAT CSE Programming Club</h3>
+                        <p class="text-lg md:text-xl font-semibold py-4 text-center">May 2022 - Till Now</p>
+                    </div>
+                </div>
+
+                <div class="bg-orange-600">
+                    <div class="p-8">
+                        <h3 class="text-xl md:text-2xl font-bold py-4 text-center">Penta Scan Solution</h3>
+                        <p class="text-lg md:text-xl font-semibold py-4 text-center">August 2023 - Till Now</p>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl md:text-2xl font-bold py-2 text-center">Tec-Eligance</h3>
+                        <p class="text-lg md:text-xl font-semibold py-2 text-center">July 2022 - Till Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Section -->
+    <section class="py-4 bg-[#b3e1e3]">
+        <div class="container mx-auto px-4">
+            <h3 class="py-10 font-black text-3xl md:text-4xl text-[#0004f5] text-center">Why Hire Me ............. ?</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/4">
+                    <img class="bg-[#b3e1e3] rounded-full mx-auto" src="img/Panjabi.png" alt="">
+                </div>
+                <div class="w-full md:w-2/4">
+                    <h3 class="text-xl md:text-2xl font-semibold text-center">You can hire me for my versatility, efficiency, problem-solving skills, up-to-date knowledge, effective communication, and adaptability. I streamline development, saving time and money while delivering comprehensive solutions.</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold py-4 text-center text-[#cb2aeb]">50 + Project Completed</h2>
+                    <div class="text-center mt-8">
+                        <a class="text-lg md:text-xl font-bold inline-block p-4 bg-white rounded-full hover:text-white hover:bg-orange-600" href="droe.html">Drop Your Idea</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Idea Section -->
+    <section class="py-4 bg-[#e5cdde]">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-black text-[#0b6e8b] py-4 text-center">Have an Awesome Project Idea...? Let's Discuss</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
+                <i class="fa-solid fa-envelope text-3xl md:text-4xl"></i>
+                <input placeholder="Enter Your Email Address" class="w-full md:w-1/3 h-10 outline-none rounded-full px-4 border-b-4 border-r-4 border-[#848e82] border-opacity-60">
+                <i class="fa-solid fa-arrow-right text-3xl md:text-4xl cursor-pointer hover:text-[#0bbd20]"></i>
+            </div>
+            <div class="py-10 grid grid-cols-1 md:grid-cols-3 gap-4 text-center font-bold text-xl md:text-2xl">
+                <p>4.6/5 Average Rating</p>
+                <p>500 + Reviews</p>
+                <p>Certified Product Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-[#050605]">
+        <div class="container mx-auto px-4">
+            <h3 class="text-white py-6 font-bold text-3xl md:text-4xl">Let's Design Together</h3>
+            <hr>
+            <p class="text-white font-black text-lg md:text-xl text-center max-w-3xl mx-auto py-6">I build custom, efficient, and user-friendly websites that help businesses succeed online. My focus is delivering high-quality results and solving complex technical challenges.</p>
+            <div class="text-center py-4">
+                <h2 class="text-white font-bold text-3xl md:text-4xl">Al Rafi Ahmed</h2>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex flex-wrap justify-center gap-4 p-4">
+                    <a class="text-lg md:text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl text-white hover:text-orange-700" href="About.html">About</a>
+                    <a class="text-lg md:text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl text-white hover:text-orange-700" href="service.html">Services</a>
+                    <a class="text-lg md:text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl text-white hover:text-orange-700" href="design.html">Design</a>
+                    <a class="text-lg md:text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl text-white hover:text-orange-700" href="project.html">Projects</a>
+                    <a class="text-lg md:text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl text-white hover:text-orange-700" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

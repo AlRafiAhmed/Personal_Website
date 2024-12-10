@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="py-7 bg-[#e3dfe8]">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center">
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600">
+                    <i class="fas fa-bars"></i> Menu
+                </button>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="hidden md:hidden w-full">
+                    <div class="flex flex-col gap-2 p-4 bg-white rounded-2xl">
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="index.html">Home</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="service.html">Service</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                        <a class="w-full text-center text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-between w-2/3 lg:w-2/5 rounded-full">
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="index.html">Home</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="service.html">Service</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                    <a class="w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-[#FFC300]">
+        <div class="container mx-auto px-4 pt-20">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="w-full md:w-1/5 mb-8 md:mb-0">
+                    <img class="mx-auto md:ml-auto animate-slide-in-right" src="img/project.png" alt="">
+                </div>
+                <div class="w-full md:w-3/5">
+                    <div class="text-center">
+                        <p class="text-xl md:text-2xl bg-white px-3 w-fit font-bold mx-auto">Hey...</p>
+                    </div>
+                    <h2 class="py-8 text-2xl md:text-4xl font-black text-center">Introducing some intuitive project built with MERN for collaboration and enhanced productivity</h2>
+                    <p class="text-xl md:text-2xl font-semibold mt-4 text-center">I can assure you that you will be glad to collaborate with us</p>
+                </div>
+
+                <style>
+                @layer utilities {
+                    .animate-slide-in-right {
+                        opacity: 0;
+                        transform: translateX(100px);
+                        animation: slideInRight 1s forwards;
+                    }
+
+                    @keyframes slideInRight {
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-[#FFC300]">
+        <div class="container mx-auto px-4">
+            <div class="text-center pb-12">
+                <p class="text-xl md:text-2xl bg-orange-600 text-white px-3 py-2 w-fit font-bold mx-auto">My Projects</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <!-- Project Cards -->
+                <div class="bg-white p-4 flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 space-y-4">
+                        <img class="w-full h-48 object-cover" src="project/project1.1.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project1.2.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project1.3.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="font-black text-2xl text-center mt-8 mb-4">Innovate</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg">Responsive Design</p>
+                            <p class="text-lg">Animation</p>
+                            <p class="text-lg">Hover</p>
+                            <p class="text-lg">User Interface Design</p>
+                            <p class="text-lg">User Experience Design</p>
+                            <p class="text-lg">Content Management System (CMS)</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <a class="inline-block p-2 bg-orange-600 rounded-lg font-bold hover:bg-[#2708d5] hover:text-white transition-colors" href="purchase.html">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat similar structure for other project cards -->
+                <!-- Project 2 -->
+                <div class="bg-white p-4 flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 space-y-4">
+                        <img class="w-full h-48 object-cover" src="project/prject5.1.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/prject5.2.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/prject5.3.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="font-black text-2xl text-center mt-8 mb-4">Gossip Social Media</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg">Responsive Design</p>
+                            <p class="text-lg">Animation</p>
+                            <p class="text-lg">Hover</p>
+                            <p class="text-lg">User Interface Design</p>
+                            <p class="text-lg">User Experience Design</p>
+                            <p class="text-lg">Content Management System (CMS)</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <a class="inline-block p-2 bg-orange-600 rounded-lg font-bold hover:bg-[#2708d5] hover:text-white transition-colors" href="purchase.html">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white p-4 flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 space-y-4">
+                        <img class="w-full h-48 object-cover" src="project/project 3.1.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 3.2.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 3.3.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="font-black text-2xl text-center mt-8 mb-4">Fresh</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg">Responsive Design</p>
+                            <p class="text-lg">Animation</p>
+                            <p class="text-lg">Hover</p>
+                            <p class="text-lg">User Interface Design</p>
+                            <p class="text-lg">User Experience Design</p>
+                            <p class="text-lg">Content Management System (CMS)</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <a class="inline-block p-2 bg-orange-600 rounded-lg font-bold hover:bg-[#2708d5] hover:text-white transition-colors" href="purchase.html">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white p-4 flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 space-y-4">
+                        <img class="w-full h-48 object-cover" src="project/project 4.1.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 4.2.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 4.3.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="font-black text-2xl text-center mt-8 mb-4">Light</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg">Responsive Design</p>
+                            <p class="text-lg">Animation</p>
+                            <p class="text-lg">Hover</p>
+                            <p class="text-lg">User Interface Design</p>
+                            <p class="text-lg">User Experience Design</p>
+                            <p class="text-lg">Content Management System (CMS)</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <a class="inline-block p-2 bg-orange-600 rounded-lg font-bold hover:bg-[#2708d5] hover:text-white transition-colors" href="purchase.html">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white p-4 flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 space-y-4">
+                        <img class="w-full h-48 object-cover" src="project/project 2.1.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 2.2.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 2.3.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="font-black text-2xl text-center mt-8 mb-4">Extreme Sports</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg">Responsive Design</p>
+                            <p class="text-lg">Animation</p>
+                            <p class="text-lg">Hover</p>
+                            <p class="text-lg">User Interface Design</p>
+                            <p class="text-lg">User Experience Design</p>
+                            <p class="text-lg">Content Management System (CMS)</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <a class="inline-block p-2 bg-orange-600 rounded-lg font-bold hover:bg-[#2708d5] hover:text-white transition-colors" href="purchase.html">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white p-4 flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 space-y-4">
+                        <img class="w-full h-48 object-cover" src="project/project 2.4.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 2.5.png" alt="">
+                        <img class="w-full h-48 object-cover" src="project/project 2.6.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="font-black text-2xl text-center mt-8 mb-4">Extreme Sports News</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg">Responsive Design</p>
+                            <p class="text-lg">Animation</p>
+                            <p class="text-lg">Hover</p>
+                            <p class="text-lg">User Interface Design</p>
+                            <p class="text-lg">User Experience Design</p>
+                            <p class="text-lg">Content Management System (CMS)</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <a class="inline-block p-2 bg-orange-600 rounded-lg font-bold hover:bg-[#2708d5] hover:text-white transition-colors" href="purchase.html">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

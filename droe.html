@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .notification {
+            display: none;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="py-6 bg-[#e3dfe8]">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center">
+                <!-- Hamburger menu for mobile -->
+                <div class="md:hidden w-full">
+                    <button id="menuBtn" class="w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600">
+                        <i class="fas fa-bars"></i> Menu
+                    </button>
+                    <div id="mobileMenu" class="hidden w-full">
+                        <a class="block text-center w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="index.html">Home</a>
+                        <a class="block text-center w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                        <a class="block text-center w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="service.html">Services</a>
+                        <a class="block text-center w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                        <a class="block text-center w-full text-lg font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex justify-between w-full md:w-2/3 lg:w-2/5">
+                    <a class="text-center w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="index.html">Home</a>
+                    <a class="text-center w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="About.html">About</a>
+                    <a class="text-center w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="service.html">Services</a>
+                    <a class="text-center w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="design.html">Design</a>
+                    <a class="text-center w-fit text-xl font-bold p-2 rounded-bl-2xl rounded-tr-2xl hover:text-white hover:bg-orange-600" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-16 md:py-32 bg-yellow-500">
+        <div class="mx-auto py-10">
+           <h2 class="py-4 mb-8 md:mb-16 rounded-2xl px-4 bg-blue-500 text-2xl md:text-4xl font-black text-white mx-auto text-center w-fit">Drop Your Idea Here</h2>
+
+           <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+               <input class="outline-none border-gray-300 text-gray-900 text-sm rounded-lg p-2 w-full md:w-3/5 h-32" type="text">
+               
+               <button id="dropBtn" class="font-bold text-xl md:text-4xl p-4 bg-[#6d28d9] border border-black rounded-2xl text-center text-white hover:bg-blue-500 hover:text-black">
+                   <a href="index.html">Drop</a>
+               </button>
+           </div>
+           
+           <h3 class="mt-8 md:mt-16 text-xl md:text-2xl font-bold text-center py-6 md:py-10">Thanks for Your Idea</h3>
+        </div>
+    </div>
+
+    <div id="successNotification" class="notification font-black text-2xl md:text-4xl">
+        Your idea has been submitted!
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('dropBtn').addEventListener('click', function() {
+            var notification = document.getElementById('successNotification');
+            notification.style.display = 'block'; 
+
+            setTimeout(function() {
+                notification.style.display = 'none'; 
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
